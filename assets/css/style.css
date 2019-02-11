@@ -1,33 +1,90 @@
 html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
+    body {
+    height: 100%;
+    }
 
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
+    .jumbotron {
+        background: url("../images/manekiNekoBG.jpg") fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    #heading{
+        height: 40px;
+        background: #AA6439;
+        line-height:40px; /* Vertical center text */
+        margin: 10px 0px;
+    }
 
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
+    #instructions{
+        height: 225px;
+        background: #e8e388;
+        padding-top: 10px; /* Vertical center text */
+        margin: 10px 0px;
+        overflow: auto;
+    }
 
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
+    #numberToGuess{
+        height: 120px;
+        background: #2eb265;
+        margin: 10px 10px 10px 0px;
+        line-height: 120px;
+    }
+
+    #winsAndLosses{
+        height: 120px;
+        background:#0eeaf2;
+        margin: 10px;
+        padding-top: 10px; /* Vertical center text */
+    }
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .crystal {
+        height: 143px; /* Mantain aspect ratio across crystals */ 
+        padding: 0px; /* Eliminate space between images */
+        margin: 10px 0px;
+    }
+
+    #currentScoreHeading{
+        height: 40px;
+        background: #11aaad;
+        line-height: 40px;
+        margin: 10px 0px;
+    }
+
+    #currentScore{
+        background: #11aaad;
+        height: 120px;
+        margin: 10px 0px;
+        line-height: 120px;
+    }
+
+
+    #wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -120px; /* leave room for footer */
+    }
+
+    .credit{
+        line-height: 60px;
+    }
+
+    #push,
+    #footer {
+    height: 60px;
+    }
+    #footer {
+    background-color: #f5f5f5;
+    }
+
+    @media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    }

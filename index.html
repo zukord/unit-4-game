@@ -4,25 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>CrystalsCollector!</title>
+        <title>Crystals Collector!</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js" type="text/javascript"></script>
     </head>
     <body>
-    
-        <div id="wrap">
-            <div id="heading"><h2>CrystalsCollector!</h2></div>
-            <div id="instructions">You will be given a random number at the start of the game. <br/> There are four crystals below. By clicking on a crystal you will add a specific amount of points to you total score. <br/> You win the game by matching your total score to a random number, and you lose the game if your total score goes above the random number. <br/> The value of each crystal is hidden from you until you click on it. <br/> Each time the game starts, the value of each crystal will change. <br/> Good luck!</div>
-            <div id="numberToGuess"></div>
-            <div id="winsandlosses"></div>
-            <div id="crystal1"></div>
-            <div id="crystal2"></div>
-            <div id="crystal3"></div>
-            <div id="crystal4"></div>
-            <div id="currentScoreHeading">Your total score is:</div>
-            <div id="currentScore"></div>
-      
+        
+        <div class="jumbotron" id="wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center" id="heading"><h1>Crystals Collector!</h1></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" id="instructions">You will be given a random number at the start of the game. <br/><br/> There are four crystal balls below. By clicking on a crystal ball you will add a specific amount of points to your total score. <br/><br/> You win the game by matching your total score to a random number, and you lose the game if your total score goes above the random number. <br/><br/> The value of each crystal ball is hidden from you until you click on it. <br/><br/> Each time the game starts, the value of each crystal ball will change. <br/><br/> Good luck!</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center" id="numberToGuess"></div>
+                    <div class="col-md-2 text-center" id="winsAndLosses"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 crystal" id="crystal1">
+                    </div>
+                    <div class="col-md-2 crystal" id="crystal2">
+                    </div>
+                    <div class="col-md-2 crystal" id="crystal3">
+                    </div>
+                    <div class="col-md-2 crystal" id="crystal4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center" id="currentScoreHeading">Your total score is:</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center"id="currentScore"></div>
+                </div>
+            </div>
+        </div>
+
             <div id="push"></div>
           </div>
         <div id="footer">
@@ -30,6 +51,10 @@
               <p class="muted credit">Images courtesy <a href="https://www.pexels.com/">Pexels Stock Photos</a>.</p>
             </div>
           </div>
+
+          <script>
+            playGame();
+          </script>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
