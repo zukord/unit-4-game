@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Crystal Game</title>
+        <title>CrystalsCollector!</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -12,7 +12,16 @@
     <body>
     
         <div id="wrap">
-
+            <div id="heading"><h2>CrystalsCollector!</h2></div>
+            <div id="instructions">You will be given a random number at the start of the game. <br/> There are four crystals below. By clicking on a crystal you will add a specific amount of points to you total score. <br/> You win the game by matching your total score to a random number, and you lose the game if your total score goes above the random number. <br/> The value of each crystal is hidden from you until you click on it. <br/> Each time the game starts, the value of each crystal will change. <br/> Good luck!</div>
+            <div id="numberToGuess"></div>
+            <div id="winsandlosses"></div>
+            <div id="crystal1"></div>
+            <div id="crystal2"></div>
+            <div id="crystal3"></div>
+            <div id="crystal4"></div>
+            <div id="currentScoreHeading">Your total score is:</div>
+            <div id="currentScore"></div>
       
             <div id="push"></div>
           </div>
@@ -21,7 +30,7 @@
               <p class="muted credit">Images courtesy <a href="https://www.pexels.com/">Pexels Stock Photos</a>.</p>
             </div>
           </div>
-          
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
